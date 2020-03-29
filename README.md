@@ -1,5 +1,20 @@
 # bibtex
+
 File containing all our bib items, for LaTeX documents
+
+## Installing
+
+* Clone this repository with ``git clone https://github.com/bbopt/bibtex.git``.
+
+* Set the environment variable ``BIBTEX`` to point to the top of this
+  repository. For example if you cloned this repository to ``/some/dir/bibtex``
+  then ``export BIBTEX=/some/dir/bibtex``. You can also simply run ``install.sh``.
+
+* Inside your LaTeX documents you can use it with `\bibliography{$BIBTEX/bibliography}`.
+
+* To check if new bib items have been added ``git pull`` inside the folder
+  containing ``bibliography.bib``. You can use ``cd $BIBTEX`` to place you directly
+  in the appropriate folder.
 
 # Pattern for new items
 
