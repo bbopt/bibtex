@@ -8,9 +8,10 @@ File containing all our bib items, for LaTeX documents
 
 * Set the environment variable ``BIBTEX`` to point to the top of this
   repository. For example if you cloned this repository to ``/some/dir/bibtex``
-  then ``export BIBTEX=/some/dir/bibtex``. You can also simply run ``install.sh``.
+  then ``export BIBTEX=/some/dir/bibtex``. Next, add ``BIBTEX`` to ``BIBINPUTS``
+  with ``export BIBINPUTS=$BIBTEX:$BIBINPUTS``. You can also simply run ``install.sh``.
 
-* Inside your LaTeX documents you can use it with `\bibliography{$BIBTEX/bibliography}`.
+* Inside your LaTeX documents you can use it with `\bibliography{bibliography}`.
 
 * To check if new bib items have been added ``git pull`` inside the folder
   containing ``bibliography.bib``. You can use ``cd $BIBTEX`` to place you directly
