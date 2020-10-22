@@ -38,7 +38,7 @@ File containing all our bib items, for LaTeX documents
   Url     = {http://dx.doi.org/},
   Date-Added    = {2020-03-xx},
   Date-Modified = {2020-03-xx}
-} % added by SLD
+} % added by NAME
 ```
 ### For a Cahier du GERAD
 ```
@@ -52,5 +52,5 @@ File containing all our bib items, for LaTeX documents
   ArxivUrl    = {http://arxiv.org/XXX},
   Date-Added    = {2020-03-xx},
   Date-Modified = {2020-03-xx}
-} % added by SLD
+} % added by NAME
 ```
