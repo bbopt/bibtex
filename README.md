@@ -36,8 +36,8 @@ File containing all our bib items, for LaTeX documents
   Year    = {},
   Doi     = {},
   Url     = {http://dx.doi.org/},
-  Date-Added    = {2020-03-xx},
-  Date-Modified = {2020-03-xx}
+  Date-Added    = {2021-03-xx},
+  Date-Modified = {2021-03-xx}
 } % added by NAME
 ```
 ### For a Cahier du GERAD
@@ -50,7 +50,7 @@ File containing all our bib items, for LaTeX documents
   Year        = {2020},
   Url         = {http://www.optimization-online.org/XXX},
   ArxivUrl    = {http://arxiv.org/XXX},
-  Date-Added    = {2020-03-xx},
-  Date-Modified = {2020-03-xx}
+  Date-Added    = {2021-03-xx},
+  Date-Modified = {2021-03-xx}
 } % added by NAME
 ```
