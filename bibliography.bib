@@ -12,8 +12,8 @@
   Year    = {},
   Doi     = {},
   Url     = {https://dx.doi.org/},
-  Date-Added    = {2022-11-22},
-  Date-Modified = {2022-11-22}
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
 } % added by SLD
 
 @techreport{G-2022-XX,
@@ -24,23 +24,11 @@
   Year          = {2021},
   Url           = {http://www.optimization-online.org/XXX},
   ArxivUrl      = {http://arxiv.org/XXX},
-  Date-Added    = {2022-11-22},
-  Date-Modified = {2022-11-22}
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
 } % added by SLD
 
 %-----------------%
-
-@techreport{MeMuSi2022,
-  Author      = {M. Menz and M. Munoz-Zuniga and D. Sinoquet},
-  Title       = {{Learning hidden constraints using a Stepwise Uncertainty Reduction strategy based on Gaussian Process Classifiers}},
-  Number      = {hal-03848238, version~1},
-  Institution = {IFPEN - IFP Energies nouvelles},
-  Year        = {2022},
-  Url         = {https://hal.archives-ouvertes.fr/hal-03848238},
-  Date-Added    = {2022-11-23},
-  Date-Modified = {2022-11-23}
-} %added by Stephane Jacquet
-
 
 @article{Na2017,
 title = "A modified DIRECT algorithm for hidden constraints in an LNG process optimization",
@@ -65,7 +53,7 @@ title = {A new DIRECT-GLh algorithm for global optimization with hidden constrai
 volume = {15},
 journal = {Optimization Letters},
 doi = {10.1007/s11590-021-01726-z}
-}
+}%added by Stephane Jacquet
 
 @article{HuNe2008,
 author = {W. Huyer and A. Neumaier},
@@ -112,9 +100,7 @@ url="https://doi.org/10.1287/ijoc.2018.0864"
 } %added by Stephane Jacquet
 
 @article{Or2021,
-
-  author = {J. Orava},
-  
+  author = {J. Orava}, 
   journal = { Tatra Mountains Mathematical Publications},
   number = 1,
   pages = {30-34},
@@ -178,21 +164,74 @@ journal = {J. Inf. Comput. Sci.}
           school = {{\'E}cole Polytechnique de Montr{\'e}al},
           author = {Lo{\"i}c Anthony {Sarrazin-Mc Cann}},
             year = {2018},
-             url = {https://publications.polymtl.ca/3099/},
-        abstract = {R{\'E}SUM{\'E}: Ce m{\'e}moire traite de comparaisons de strat{\'e}gies algorithmiques applicables {\`a} certains algorithmes
-d?optimisation de bo{\^i}tes noires. Une bo{\^i}te noire est un probl{\`e}me typiquement lourd en temps de calcul, non diff{\'e}rentiable, bruit{\'e} et potentiellement propri{\'e}taire. Afin de r{\'e}soudre ces probl{\`e}mes, des techniques n?utilisant pas les informations sur les d{\'e}riv{\'e}es des expressions
-alg{\'e}briques d{\'e}finissant les probl{\`e}mes ont {\'e}t{\'e} con{\c c}ues.
-Les m{\'e}thodes cibl{\'e}es pour y impl{\'e}menter les strat{\'e}gies algorithmiques sont celles figurant dans un cadre de travail sp{\'e}cifique. Les m{\'e}thodes doivent contenir une {\'e}tape n{\'e}cessitant une s{\'e}quence d?{\'e}valuations de la fonction objectif {\`a} des points figurant dans une liste pr{\'e}d{\'e}termin{\'e}e.
-Les m{\'e}thodes de recherche directe correspondent {\`a} ces crit{\`e}res ; elles sont des m{\'e}thodes contenant une s{\'e}rie d?{\'e}valuations de points, et basent la d{\'e}termination de la prochaine liste de candidats sur les valeurs obtenues {\`a} ces points. Les m{\'e}thodes d?optimisation par recherche directe identifi{\'e}es sont la recherche par coordonn{\'e}es (CS), la recherche par motifs g{\'e}n{\'e}ralis{\'e}e(GPS), la recherche par ensembles g{\'e}n{\'e}rateurs (GSS), la recherche directe par treillis adaptatifs (MADS) et le filtrage implicite (IMFIL).
-La strat{\'e}gie algorithmique {\'e}tudi{\'e}e est la strat{\'e}gie opportuniste. Elle d{\'e}signe l?arr{\^e}t de l?{\'e}tape de l?algorithme comprenant une s{\'e}rie d?{\'e}valuations s{\'e}quentielles. L?arr{\^e}t peut-{\^e}tre fait apr{\`e}s un ou plusieurs succ{\`e}s, c?est-{\`a}-dire l?{\'e}valuation d?un point pour lequel la valeur de la fonction objectif est inf{\'e}rieure {\`a} la minimale encourue pr{\'e}c{\'e}demment dans la r{\'e}solution. Plusieurs
-d{\'e}clinaisons de la strat{\'e}gie sont identifi{\'e}es, impl{\'e}ment{\'e}es et test{\'e}es sur une batterie de probl{\`e}mes tests, afin de d{\'e}terminer num{\'e}riquement leurs impacts. L?arr{\^e}t d?une s{\'e}rie d?{\'e}valuations implique que l?ordre des points {\`a} {\'e}valuer impacte la performance de la strat{\'e}gie opportuniste. On identifie les strat{\'e}gies d?ordonnancements suivantes
-afin de les jumeler {\`a} la strat{\'e}gie opportuniste et d?{\'e}tudier leurs impacts : lexicographique, al{\'e}atoire, utilisant la direction du dernier succ{\`e}s et utilisant les mod{\`e}les. Toutes ces strat{\'e}gies sont impl{\'e}ment{\'e}es et test{\'e}es sur l?ensemble de probl{\`e}mes tests. Les tests num{\'e}riques sur un ensemble de probl{\`e}mes incluant une bo{\^i}te noire r{\'e}v{\`e}lent que l?opportunisme le plus rudimentaire, dont le crit{\`e}re d?arr{\^e}t est l?obtention d?un simple succ{\`e}s, est b{\'e}n{\'e}fique {\`a} divers degr{\'e}s pour toutes les m{\'e}thodes de recherche directe identifi{\'e}es sauf le filtrage implicite. Les strat{\'e}gies d?ordonnancement utilisant les mod{\`e}les, al{\'e}atoire et utilisant la direction du dernier succ{\`e}s, forment le classement des strat{\'e}gies b{\'e}n{\'e}fiques. L?ordonnancement lexicographique jumel{\'e} {\`a} l?opportunisme nuit aux algorithmes.----------ABSTRACT: This work considers algorithmic strategies to implement and compare through various blackbox optimization algorithms. A blackbox is a problem to be minimized which is typically computationally heavy, non-differentiable, noisy and may be driven by a private or legacy code. Solving these problems requires optimization techniques that are not using first-order
-derivative informations of the analytical functions underlying the blackbox. The methods in which the algorithmic strategies are to be implemented need to fit a specific framework. They must contain a step in which there is a sequence of evaluations of the objective function. Those evaluations are to be made at predetermined list of candidate points. A family of derivative-free methods, the direct search methods, qualifies as methods fitting this framework. Direct search methods choose the next list of candidate points based on the function evaluation values at the current list of candidates. The identified direct search
-methods for this work include the Coordinate Search (CS), Generalized Pattern Search (GPS), Generative Set Search (GSS), Mesh-Adaptive Direct Search (MADS), and Implicit Filternig (IMFIL). The main algorithmic strategy studied in this work is the opportunistic strategy, which designates
-the premature ending of the algorithm?s step consisting of serial function evaluations. This termination occurs after one or more successes. A success indicates the finding of a
-candidate point for which the objective function value is improved from the past best known point. Three variations of the opportunistic strategy are identified. The termination of the step implies that the order of in the candidate list affects the performance of the strategy. Four main ordering strategies are identified and teamed with the opportunistic strategy in order to determine what impact does ordering have in this context. Those strategies consist of a lexicographic ordering, a random ordering, an ordering based
-on the direction of the last success and an ordering based on a quadratic surrogate function. Numerical results are obtained via the resolution of a large problem set including a typical blackbox. The results show that the simplest of the opportunistic strategies, the one that terminates immediately after the identification of a single success, benefits the most to all the methods, beside Implicit Fitlering, for which a standard non-opportunistic use works best. The ordering strategies by order of performance gain is the quadratic surrogate-based, the random and the last success direction-based. Lexicographic ordering mixed with opportunism deteriorates the performance of the methods.}
+             url = {https://publications.polymtl.ca/3099/}
 } %added by Stephane Jacquet
+
+@techreport{BaChDiMa2018,
+  Author      = {A. Babier and T. C. Y. Chan and A. Diamant and R. Mahmood},
+  Title       = {{Learning to Optimize with Hidden Constraints}},
+  Institution = {ArXiv},
+  Number      = {1805.09293},
+  Url         = {https://arxiv.org/abs/1805.09293},
+  ArxivUrl    = {https://arxiv.org/abs/1805.09293},
+  Year        = {2018},
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
+} % added by Stephane Jacquet
+
+ @inbook{AlBeBe2018,
+  Author    = {S.R. Alimo and P.Beyhaghi and T.R. Bewley},
+  Title     = {{Delaunay-Based Global Optimization in Nonconvex Domains Defined by Hidden Constraints}},
+  BookTitle = {{Evolutionary and Deterministic Methods for Design Optimization and Control With Applications to Industrial and Societal Problems}},
+  Editor    = {E. Andr{\'e}s-P{\'e}rez and L.M. Gonz{\'a}lez and J.Periaux and N. Gauger and D. Quagliarella and K. Giannakoglou},
+  Year      = {2019},
+  Publisher = {Springer International Publishing},
+  Address   = {Cham},
+  Pages     = {261--271},
+  Doi       = {10.1007/978-3-319-89890-2_17},
+  Url       = {https://doi.org/10.1007/978-3-319-89890-2_17},
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
+ } % added by Stephane Jacquet
+
+@article{BaHePi2020,
+  Author  = {F. Bachoc and C. Helbert and V. Picheny},
+  Title   = {{Gaussian process optimization with failures: classification and convergence proof}},
+  Journal = {Journal of Global Optimization},
+  Year    = {2020},
+  Volume  = {78},
+  Number  = {3},
+  Pages   = {483--506},
+  Doi     = {10.1007/s10898-020-00920-0},
+  Url     = {https://doi.org/10.1007/s10898-020-00920-0},
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
+} % added by Stephane Jacquet
+
+@article{Ca2021,
+  Author  = {A. Candelieri},
+  Title   = {{Sequential model based optimization of partially defined functions under unknown constraints}},
+  Journal = {Journal of Global Optimization},
+  Year    = {2021},
+  Volume  = {79},
+  Number  = {2},
+  Pages   = {281--303},
+  Doi     = {10.1007/s10898-019-00860-4},
+  Url     = {https://dx.doi.org/10.1007/s10898-019-00860-4},
+  Date-Added    = {2022-12-06},
+  Date-Modified = {2022-12-06}
+} % added by Stephane Jacquet
+
+@unpublished{Talbi2020,
+  Author  = {E.-G. Talbi},
+  Title   = {{Machine learning into metaheuristics: A survey and taxonomy of data-driven metaheuristics}},
+  Year    = {2020},
+  Url     = {https://hal.inria.fr/hal-02745295},
+  Institution   = {INRIA},
+  Date-Added    = {2022-05-26},
+  Date-Modified = {2022-05-27}
+} % added by V. Houyau
+
 
 @techreport{G-2022-11,
   Author        = {C. Audet and E. {Hall\'e-Hannan} and S. {Le~Digabel}},
@@ -711,15 +750,6 @@ on the direction of the last success and an ordering based on a quadratic surrog
   Pages   = {171--215},
   Doi     = {10.1007/s10479-015-2034-y},
   Url     = {https://doi.org/10.1007/s10479-015-2034-y},
-  Date-Added    = {2022-05-26},
-  Date-Modified = {2022-05-27}
-} % added by V. Houyau
-
-@unpublished{Talbi2020,
-  Author  = {E.-G. Talbi},
-  Title   = {{Machine learning into metaheuristics: A survey and taxonomy of data-driven metaheuristics}},
-  Year    = {2020},
-  Url     = {https://hal.inria.fr/hal-02745295},
   Date-Added    = {2022-05-26},
   Date-Modified = {2022-05-27}
 } % added by V. Houyau
