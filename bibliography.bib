@@ -11,8 +11,8 @@
   Year    = {},
   Doi     = {},
   Url     = {https://dx.doi.org/},
-  Date-Added    = {2023-11-01},
-  Date-Modified = {2023-11-01}
+  Date-Added    = {2023-11-09},
+  Date-Modified = {2023-11-09}
 } % added by SLD
 
 @techreport{G-2022-XX,
@@ -23,13 +23,126 @@
   Year          = {2021},
   Url           = {http://www.optimization-online.org/XXX},
   ArxivUrl      = {http://arxiv.org/XXX},
-  Date-Added    = {2023-11-01},
-  Date-Modified = {2023-11-01}
+  Date-Added    = {2023-11-09},
+  Date-Modified = {2023-11-09}
 } % added by SLD
 
 %-----------------%
 
-@inproceedings{HoZa2018,     
+@misc{Gr1999,
+  Author    = {D.C. Gross},
+  Title     = {{Fidelity implementation study group report}},
+  Journal   = {No. SISO-REF-002--1999). Simulation Interoperability Standards Organization (SISO)},
+  Year      = {1999},
+  Date-Added    = {2023-10-11},
+  Date-Modified = {2023-10-11}
+}
+
+@techreport{Fe2023,
+  Author        = {M.G. {Fern{\'a}ndez-Godino}},
+  Title         = {{Review of multi-fidelity models}},
+  Institution   = {ArXiv},
+  Number        = {1609.07196},
+  Year          = {2023},
+  Doi           = {10.48550/arXiv.1609.07196},
+  Url           = {https://arxiv.org/abs/1609.07196v4},
+  Date-Added    = {2023-10-26},
+  Date-Modified = {2023-10-26}
+} % V4 du tech report, pas envore publié. Added by Xavier Lebeuf
+
+@article{andres2022bifidelity,
+  Author  = {N. Andr{\'e}s-Thi{\'o} and M.A. Mu{\~n}oz and K. Smith-Miles},
+  Title   = {{Bifidelity Surrogate Modelling: Showcasing the Need for New Test Instances}},
+  Journal = {INFORMS Journal on Computing},
+  Volume  = {34},
+  Number  = {6},
+  Pages   = {3007--3022},
+  Year    = {2022},
+  Doi     = {10.1287/ijoc.2022.1217},
+  Url     = {https://doi.org/10.1287/ijoc.2022.1217},
+  Date-Added    = {2023-10-10},
+  Date-Modified = {2023-10-10}
+}
+
+@article{wang2017generic,
+  Author  = {H. Wang and Y. Jin and J. Doherty},
+  Title   = {{A Generic Test Suite for Evolutionary Multifidelity Optimization}},
+  Journal = {IEEE Transactions on Evolutionary Computation},
+  Volume  = {22},
+  Number  = {6},
+  Pages   = {836--850},
+  Year    = {2018},
+  Doi     = {10.1109/TEVC.2017.2758360},
+  Url     = {https://doi.org/10.1109/TEVC.2017.2758360},
+  Date-Added    = {2023-10-10},
+  Date-Modified = {2023-10-10}
+}
+
+@article{dzahini22,
+  Author  = {K.J. Dzahini},
+  Title   = {{Expected complexity analysis of stochastic direct-search}},
+  Journal = {Computational Optimization and Applications},
+  Volume  = {81},
+  Number  = {1},
+  Pages   = {179--200},
+  Year    = {2022},
+  Doi     = {10.1007/s10589-021-00329-9},
+  Url     = {https://doi.org/10.1007/s10589-021-00329-9},
+  Date-Added    = {2023-10-17},
+  Date-Modified = {2023-10-17}
+}
+
+@techreport{MeMuSi2022,
+  Author      = {M. Menz and M. Munoz-Zuniga and D. Sinoquet},
+  Title       = {{Learning hidden constraints using a Stepwise Uncertainty Reduction strategy based on Gaussian Process Classifiers}},
+  Number      = {hal-03848238, version~1},
+  Institution = {IFPEN -- IFP Energies nouvelles},
+  Year        = {2022},
+  Url         = {https://hal.archives-ouvertes.fr/hal-03848238},
+  Date-Added    = {2022-11-23},
+  Date-Modified = {2022-12-06}
+} % archissur
+
+@techreport{MeMuSi2023,
+  Author      = {M. Menz and M. Munoz-Zuniga and D. Sinoquet},
+  Title       = {{Estimation of simulation failure set with active learning based on Gaussian Process classifiers and random set theory}},
+  Year        = {2023},
+  Number      = {hal-03848238},
+  Institution = {IFPEN -- IFP Energies nouvelles},
+  Url         = {https://hal.science/hal-03848238v2},
+  Date-Added    = {2023-10-10},
+  Date-Modified = {2023-11-09}
+} % added by Xavier Lebeuf
+
+@article{PeWiGu2018,
+  Author  = {B. Peherstorfer and K. Willcox and M. Gunzburger},
+  Title   = {{Survey of Multifidelity Methods in Uncertainty Propagation, Inference, and Optimization}},
+  Journal = {SIAM Review},
+  Volume  = {60},
+  Number  = {3},
+  Pages   = {550--591},
+  Year    = {2018},
+  Doi     = {10.1137/16M1082469},
+  Url     = {https://doi.org/10.1137/16M1082469},
+  Date-Added    = {2023-10-10},
+  Date-Modified = {2023-11-09}
+} % added by Xavier Lebeuf
+
+@article{Haftka16,
+  Author  = {R.T. Haftka and D. Villanueva and A. Chaudhuri},
+  Title   = {{Parallel surrogate-assisted global olptimization with expensive functions -- a survey}},
+  Journal = {Structural and Multidisciplinary Optimization},
+  Volume  = {54},
+  Number  = {1},
+  Pages   = {3--13},
+  Year    = {2016},
+  Url     = {https://doi.org/10.1007/s00158-016-1432-3},
+  Doi     = {10.1007/s00158-016-1432-3},
+  Date-Added    = {2023-11-09},
+  Date-Modified = {2023-11-09} 
+}
+
+@inproceedings{HoZa2018,
   Author    = {D. Horn and M. Zaefferer},   
   Title     = {{A First Analysis of Kernels for Kriging-based Optimization in Hierarchical Search Spaces}}, 
   Booktitle = {Parallel Problem Solving from Nature - PPSN XV},
@@ -71,7 +184,7 @@
 } % added by Edward H-Hannan
 
 @inproceedings{BaBuCiNaLe2021,     
-  Author    = {N. Bartoli and J H. Bussemaker and P.D. Ciampa and B. Nagel and T. Lefebvre},   
+  Author    = {N. Bartoli and J.H. Bussemaker and P.D. Ciampa and B. Nagel and T. Lefebvre},   
   Title     = {{Effectiveness of Surrogate-Based Optimization Algorithms for System Architecture Optimization}}, 
   Booktitle = {AIAA AVIATION 2021 Forum},
   Publisher = {American Institute of Aeronautics and Astronautics},
@@ -80,7 +193,7 @@
   Doi       = {10.2514/6.2021-3095},
   Url       = {https://doi.org/10.2514/6.2021-3095},
   Date-Added    = {2023-11-08},
-  Date-Modified = {2023-11-08}
+  Date-Modified = {2023-11-09}
 } % added by Edward H-Hannan
 
 @article{BrMeRa2007,
@@ -91,10 +204,10 @@
   Number  = {1}, 
   Pages   = {55--73}, 
   Year    = {2007},
-  Doi     = {10.1093/imaman/dpl010}, 
-  Url     = {https://ieeexplore.ieee.org/document/8132246}, 
+  Doi     = {10.1093/imaman/dpl010},
+  Url     = {https://doi.org/10.1093/imaman/dpl010},
   Date-Added    = {2023-11-08},
-  Date-Modified = {2023-11-08}
+  Date-Modified = {2023-11-09}
 } 
 % added by Edward H-Hannan
 
@@ -106,10 +219,10 @@
   Number  = {2}, 
   Pages   = {17--27}, 
   Year    = {1999},
-  Doi     = {10.21314/JOR.2000.023}, 
-  Url     = {https://www.risk.net/journal-of-risk/2161082/the-most-general-methodology-for-creating-a-valid-correlation-matrix-for-risk-management-and-option-pricing-purposes}, 
+  Doi     = {10.21314/JOR.2000.023},
+  Url     = {https://doi.org/10.21314/JOR.2000.023}, 
   Date-Added    = {2023-11-08},
-  Date-Modified = {2023-11-08}
+  Date-Modified = {2023-11-09}
 } 
 % added by Edward H-Hannan
 
@@ -306,20 +419,6 @@
   Date-Modified = {2021-04-21}
 } % 55-JOSEPH1
 
-@article{dzahini22,
-  Author  = {K.J. Dzahini},
-  Title   = {{Expected complexity analysis of stochastic direct-search}},
-  Journal = {Computational Optimization and Applications},
-  Volume  = {81},
-  Number  = {1},
-  Pages   = {179--200},
-  Year    = {2022},
-  Doi     = {10.1007/s10589-021-00329-9},
-  Url     = {https://doi.org/10.1007/s10589-021-00329-9},
-  Date-Added    = {2023-10-17},
-  Date-Modified = {2023-10-17}
-}
-
 @mastersthesis{MScXL,
   Author = {X. Lebeuf},
   Title  = {{Optimisation de bo\^ites noires multifid\'elit\'es avec contraintes hi\'erarchis\'ees}},
@@ -327,34 +426,6 @@
   Year   = {2023},
   Url    = {https://publications.polymtl.ca/53386/},
   Note   = {Available at \url{https://publications.polymtl.ca/53386/}},
-  Date-Added    = {2023-10-10},
-  Date-Modified = {2023-10-10}
-}
-
-@article{andres2022bifidelity,
-  Author  = {N. Andr{\'e}s-Thi{\'o} and M.A. Mu{\~n}oz and K. Smith-Miles},
-  Title   = {{Bifidelity Surrogate Modelling: Showcasing the Need for New Test Instances}},
-  Journal = {INFORMS Journal on Computing},
-  Volume  = {34},
-  Number  = {6},
-  Pages   = {3007--3022},
-  Year    = {2022},
-  Doi     = {10.1287/ijoc.2022.1217},
-  Url     = {https://doi.org/10.1287/ijoc.2022.1217},
-  Date-Added    = {2023-10-10},
-  Date-Modified = {2023-10-10}
-}
-
-@article{wang2017generic,
-  Author  = {H. Wang and Y. Jin and J. Doherty},
-  Title   = {{A generic test suite for evolutionary multifidelity optimization}},
-  Journal = {IEEE Transactions on Evolutionary Computation},
-  Volume  = {22},
-  Number  = {6},
-  Pages   = {836--850},
-  Year    = {2017},
-  Doi     = {10.1109/TEVC.2017.2758360},
-  Url     = {https://doi.org/10.1109/TEVC.2017.2758360},
   Date-Added    = {2023-10-10},
   Date-Modified = {2023-10-10}
 }
@@ -2251,17 +2322,6 @@ Date-Modified = {2023-09-21}
   Date-Added    = {2021-03-29},
   Date-Modified = {2021-03-29}
 }
-
-@techreport{MeMuSi2022,
-  Author      = {M. Menz and M. Munoz-Zuniga and D. Sinoquet},
-  Title       = {{Learning hidden constraints using a Stepwise Uncertainty Reduction strategy based on Gaussian Process Classifiers}},
-  Number      = {hal-03848238, version~1},
-  Institution = {IFPEN -- IFP Energies nouvelles},
-  Year        = {2022},
-  Url         = {https://hal.archives-ouvertes.fr/hal-03848238},
-  Date-Added    = {2022-11-23},
-  Date-Modified = {2022-12-06}
-} % archissur
 
 @unpublished{Talbi2020,
   Author  = {E.-G. Talbi},
