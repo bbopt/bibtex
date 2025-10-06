@@ -1,0 +1,30 @@
+name: Sync .bib to Sacha's MSc Overleaf
+
+on:
+  push:
+    paths:
+      - '**.bib'  # triggers only when a .bib file changes
+  workflow_dispatch:  # allow manual triggering too
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone Overleaf project
+        run: |
+          git clone "${{ secrets.OVERLEAF_SACHA_URL }}" overleaf
+
+      - name: Copy bibliography file
+        run: |
+          cp bibliography.bib overleaf/bibliography.bib
+
+      - name: Commit and push to Overleaf
+        run: |
+          cd overleaf
+          git config user.name "git"
+          git config user.email "action@github.com"
+          git add bibliography.bib
+          git commit -m "Auto-sync bibliography from GitHub" || echo "No changes to commit"
+          git push "https://${{ secrets.OVERLEAF_SACHA_USER }}:${{ secrets.OVERLEAF_SACHA_TOKEN }}@${{ secrets.OVERLEAF_SACHA_URL }}"
