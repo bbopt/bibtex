@@ -15,11 +15,9 @@ jobs:
       - name: Clone Overleaf project
         run: |
           git clone "https://${{ secrets.OVERLEAF_SACHA_USER }}:${{ secrets.OVERLEAF_SACHA_TOKEN }}@${{ secrets.OVERLEAF_SACHA_URL }}" overleaf
-
       - name: Copy bibliography file
         run: |
           cp bibliography.bib overleaf/bibliography.bib
-
       - name: Commit and push to Overleaf
         run: |
           cd overleaf
