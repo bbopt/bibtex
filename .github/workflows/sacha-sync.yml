@@ -23,6 +23,6 @@ jobs:
           cd overleaf
           git config user.name "git"
           git config user.email "action@github.com"
-          git add bibliography.bib
+          git add thesis/bibliography.bib
           git commit -m "Auto-sync bibliography from GitHub" || echo "No changes to commit"
           git push "https://${{ secrets.OVERLEAF_SACHA_USER }}:${{ secrets.OVERLEAF_SACHA_TOKEN }}@${{ secrets.OVERLEAF_SACHA_URL }}"
